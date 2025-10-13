@@ -38,8 +38,6 @@ def Total():
     global a6 
     global a7 
     global a8 
-    global a9 
-    global a10
     return max(Minim(a1,a2),Maxim(a3,a4))+min(Maxim(a5,a6),Minim(a7,a8))
 
 print("SUMA=",Suma())
