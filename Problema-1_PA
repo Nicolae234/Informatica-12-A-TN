@@ -1,0 +1,30 @@
+import random
+
+a = random.randint(0, 100)
+b = random.randint(0, 100)
+
+print(f"Numerele generate sunt: a = {a}, b = {b}")
+
+raspuns = int(input(f"Care este rezultatul lui {a} + {b}? "))
+if raspuns == a + b:
+    print("Corect!")
+else:
+    print(f" Greșit. Răspunsul corect este {a + b}.")
+
+raspuns = int(input(f"Care este rezultatul lui {a} - {b}? "))
+if raspuns == a - b:
+    print(" Corect!")
+else:
+    print(f"Greșit. Răspunsul corect este {a - b}.")
+
+raspuns = int(input(f"Care este rezultatul lui {b} - {a}? "))
+if raspuns == b - a:
+    print("Corect!")
+else:
+    print(f" Greșit. Răspunsul corect este {b - a}.")
+
+raspuns = int(input(f"Care este rezultatul lui {a} * {b}? "))
+if raspuns == a * b:
+    print("Corect!")
+else:
+    print(f"Greșit. Răspunsul corect este {a * b}.")
