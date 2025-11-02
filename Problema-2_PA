@@ -1,0 +1,14 @@
+import random
+
+def genereaza_varianta():
+    numere = []
+    while len(numere) < 5:
+        numar = random.randint(1, 36)  
+        if numar not in numere:         
+            numere.append(numar)
+    numere.sort()                      
+    return numere
+
+for i in range(10):
+    varianta = genereaza_varianta()
+    print("Varianta", i + 1, ":", varianta)
