@@ -41,6 +41,28 @@ produse = citire_produse("Produse.txt")
 data_curenta = "2025-11-11"
 rezultat = calculeaza_preturi(produse, data_curenta)
 
+expirate = [p for p in rezultat if p[4] == 0.0]
+reducere_50 = [p for p in rezultat if p[4] == 0.5 * p[3]]
+reducere_20 = [p for p in rezultat if p[4] == 0.8 * p[3]]
+cel_putin_1_an = [p for p in rezultat if p[5] >= 365]
+cel_mult_1_luna = [p for p in rezultat if p[5] <= 30]
+
+lista_finala = [
+    ("expirate", expirate),
+    ("reducere_50%", reducere_50),
+    ("reducere_20%", reducere_20),
+    ("termen >= 1 an", cel_putin_1_an),
+    ("termen <= 1 lună", cel_mult_1_luna)
+]
+
 print("Lista produselor:\n")
 for r in rezultat:
     print(r)
+
+print("\nListele de tupluri pe categorii:\n")
+for denumire_categorie, lista in lista_finala:
+    print(f"{denumire_categorie}:")
+    for p in lista:
+        print(p)
+    print()
+
