@@ -34,7 +34,7 @@ def calculeaza_preturi(produse, data_curenta):
         elif trecute >= termen_total * 0.5:
             pret_actual = pret_init * 0.8
 
-        rezultat.append((denumire, df, de, pret_init, pret_actual))
+        rezultat.append((denumire, df, de, pret_init, pret_actual, termen_total ))
     return rezultat
 
 produse = citire_produse("Produse.txt")
