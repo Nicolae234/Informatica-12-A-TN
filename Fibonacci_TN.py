@@ -10,5 +10,11 @@ def fibonacci_iterativ(n):
     for _ in range(n):
         a, b = b, a + b
     return a
-print('factorial recursiv',fibonacci_recursiv(n))
-print('factorial iterativ',fibonacci_recursiv(n))
+print('fibonacci recursiv',fibonacci_recursiv(n))
+print('fibonacci iterativ',fibonacci_recursiv(n))
+
+print("Șirul Fibonacci până la n:")
+a, b = 0, 1
+for i in range(n+1):
+    print(a, end=" ")
+    a, b = b, a + b
