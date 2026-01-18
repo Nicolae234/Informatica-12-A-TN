@@ -1,0 +1,15 @@
+import random 
+X = set()
+Y = set()
+
+for i in range(10):
+    X.add(random.randint(0, 199))
+    Y.add(random.randint(0, 199))
+
+print("X =", X)
+print("Y =", Y)
+print("a) X ∪ Y =", X | Y)
+print("b) X ∩ Y =", X & Y)
+print("c) X \\ Y =", X - Y)
+print("d) (X\\Y) ∪ (Y\\X) =", (X - Y) | (Y - X))
+print("e) (X\\Y) ∩ (Y\\X) =", (X - Y) & (Y - X))

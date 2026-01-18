@@ -1,0 +1,9 @@
+A = {1, 2, 3, 'A', 'B', 'C'}
+submultimi=[set()]
+for element in A:
+    n=[]
+    for s in submultimi:
+        n.append(s|{element})
+    submultimi.extend(n)
+for s in submultimi:
+    print(s)

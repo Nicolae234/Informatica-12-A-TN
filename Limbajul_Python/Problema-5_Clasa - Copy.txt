@@ -1,0 +1,18 @@
+import random
+
+n = int(input("Introduceți numărul de elemente: "))
+k = []
+
+for x in range(n):
+    k.extend([random.randint(-100, 100)])
+
+print("Tabloul generat:", k)
+
+maxim = max(k)
+suma = 0
+for x in k:
+    if x < maxim:
+        suma += x
+
+print("Elementul maxim este:", maxim)
+print("Suma elementelor mai mici decât maximul este:", suma)

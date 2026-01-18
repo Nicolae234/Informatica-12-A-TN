@@ -1,0 +1,16 @@
+import random
+
+n = int(input("Introduceți numărul de elemente: "))
+suma_poz = 0
+suma_neg = 0
+
+for i in range(n):
+    nr=random.randint(-50, 50)
+    print(nr)
+    if nr > 0:
+        suma_poz += nr
+    elif nr < 0:
+        suma_neg += nr
+
+print("Spoz =", suma_poz)
+print("Sneg =", suma_neg)
