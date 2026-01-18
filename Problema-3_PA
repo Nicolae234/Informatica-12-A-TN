@@ -1,7 +1,0 @@
-import random
-
-while True:
-    nr = random.randint(100, 999)
-    if nr % 6 == 0 and nr % 8==0:
-        print("Numărul generat este:", nr)
-        break
