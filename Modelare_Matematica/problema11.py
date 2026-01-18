@@ -1,0 +1,6 @@
+m1 = float(input("Masa m1: "))
+t1 = float(input("Temperatura T1: "))
+m2 = float(input("Masa m2: "))
+t2 = float(input("Temperatura T2: "))
+tf = (m1 * t1 + m2 * t2) / (m1 + m2)
+print(f"Temperatura finală: {tf}")
